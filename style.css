@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: #0C3C60;
+}
+
+.nav-tittle{
+    padding: 20px;
+}
+.nav-tittle a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 100;
+}
+
+/* nav right styling */
+ul{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 18px;
+    padding: 20px;
+}
+.nav-ul .nav-li {
+    list-style-type: none;
+}
+.nav-li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.nav-li a:hover{
+    color: #3EA0DB;
+    transition: .4s;
+}
+span{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+.fa-user{
+    color: #0C3C60;
+}
+
+/* responsiv icon  */
+
+.toggle-icon{
+    display: none;
+}
+.toggle-icon i{
+    color: white;
+    font-size: 18px;
+}
+
+/* content part styling  */
+.content{
+    background-image: url("/header-img.webp");
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.achiving{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 40px;
+    width: 50vw;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    background: white;
+
+}
+.achiving p{
+    font-size: 2.9rem;
+    font-weight: 100;
+}
+.achiving h1{
+    font-size: 3rem;
+}
+.btn{
+    margin: 0 auto;
+    padding: 15px;
+    background-color: blue;
+    border: 0;
+    margin-bottom: 70px;
+    color: white;
+}
+
+.card{
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.card h1{
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+.card p{
+
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+
+.info-btn{
+    display: flex;
+    justify-content: center;
+}
+.info-btn button{
+    padding: 12px;
+    width: 200px;
+    background-color: blue;
+    border: none;
+    color: white;
+}
+.card-item h1 , p{
+    margin-bottom: 30px;
+}
+/* ----------------------------------- */
+.about{
+    margin-top: 5rem;
+}
+.in-about{
+    position: absolute;
+    z-index: 6;
+}
+.image-div{
+    opacity: 0.5;
+}
+.image-div img{
+    width: 100vw;
+    height: 100%;
+}
+.reg{
+    position: absolute;
+    width: 70vw;
+    margin: 400px 150px;
+    /* right: 0; */
+}
+
+
+
+
+/* ###################################### */
+/* responsive */
+@media (max-width:500px){
+    .nav-ul{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+
+    .card{
+        display: inline;
+    }
+    .achiving{
+        width:100vw;
+        background-color: transparent;
+    }
+}
